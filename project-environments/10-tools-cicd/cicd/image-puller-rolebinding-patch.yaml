@@ -1,0 +1,26 @@
+# PetClinic service accounts and projects.
+- op: add
+  path: /subjects/-
+  value:
+    kind: ServiceAccount
+    name: petclinic
+    namespace: petclinic-dev
+- op: add
+  path: /subjects/-
+  value:
+    kind: ServiceAccount
+    name: petclinic
+    namespace: petclinic-uat
+# Contacts service accounts and projects.
+- op: add
+  path: /subjects/-
+  value:
+    kind: ServiceAccount
+    name: default
+    namespace: contacts-dev
+- op: add
+  path: /subjects/-
+  value:
+    kind: ServiceAccount
+    name: default
+    namespace: contacts-uat

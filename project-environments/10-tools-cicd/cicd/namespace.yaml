@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: CI/CD Tools
+    openshift.io/display-name: CI/CD Tools
+    openshift.io/requester: system:serviceaccount:argocd:argocd-application-controller
+  name: cicd
